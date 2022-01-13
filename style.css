@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #025284;
+    font-family: sans-serif;
+    color: white;
+}
+
+/**************Beginning Container**************/
+#wrapper {
+    width: 65%;
+    margin: auto;
+    background-color: white;
+}
+p{
+    text-align: justify;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+img{
+    width: 100%;
+    vertical-align: top;
+} 
+/*****************End Container*****************/
+
+/***************Beginning  Header***************/
+header{
+    text-align: center;
+}
+h1{
+    background-color: #6ed0f7;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+/******************End  Header******************/
+
+/***************Beginning  NavBar***************/
+nav{
+    background-color:#6ed0f7;
+    justify-content: center;
+    padding: 20px 0;
+    border-bottom: 2px dashed;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+nav a:first-child{
+    background-color: #61b6d8;
+    padding: 20px;
+}
+nav a:hover{
+    color: lightgray;
+}
+/********************Nav Bar********************/
+
+/****************Beginning  Main****************/
+main{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2%;
+}
+/*******************End  Main*******************/
+
+/***************Beginning Article***************/
+article{
+    white-space: pre-line;
+    color: black;
+    width: 70%;
+    margin-right: 20px;
+}
+h2{
+    color: rgb(245, 223, 27);
+    font-size: 30px;
+}
+article figure{
+    display: flex;
+    height: 40%;
+    justify-content: space-between;
+}
+article figure img{
+    width: 32%;
+    border: 1px solid black;
+}
+/******************End Article******************/
+
+/****************Beginning  Aside***************/
+aside{
+    margin: 6% 0;
+    width: 30%;
+    background-color: royalblue;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+aside figure{
+    width: 80%;
+    margin: 0 auto;
+}
+figcaption{
+    font-size: 15px;
+}
+aside figure img{
+    border: 2px solid white;
+    margin-bottom: 20px;
+}
+aside p{
+    padding: 15px;   
+}
+i {
+    text-align: center;
+}
+/*******************End Aside*******************/
+
+/**************Beginning  Footer****************/
+footer{
+    background-color: rgb(7, 7, 134);
+    text-align: center;
+    padding: 10px;
+
+}
+/******************End  Footer******************/
+
+/*----------Beginning Max Width 767px----------*/
+@media all and (max-width: 767px){  
+#wrapper{
+    width: 100%;
+}
+/* -------------- End Container -------------- */
+
+/* ------------ Beginning  Header ------------ */
+h1{
+  display: none;
+}
+header figure img{
+    height: auto;
+}
+/* --------------- End Header ---------------- */
+
+/* ------------ Beginning Nav Bar ------------ */
+nav{
+    background-color: #ffd71f;
+    padding: 10px;
+    justify-content: space-around;
+}
+nav article {
+    width: 100%;
+    font-family: justify;
+    font-size: 11px;
+}
+nav a:first-child{
+    background: none;
+}
+/* --------------- End Nav Bar --------------- */
+
+/* ------------- Beginning  Main ------------- */
+main{
+    flex-direction: column;
+    align-items: center;
+}
+article{
+    width: 95%;
+    margin: 0;
+}
+article figure{
+    justify-content: center;
+}
+.movie{
+    display: none;
+}
+/* ----------------- End  Main --------------- */
+
+/* ------------- Beginning Aside ------------- */
+aside{
+    width: 65%;
+    margin: 0;
+}
+aside figure{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+}
+aside figure img{
+    width: 20%;
+    margin:0 10px;
+}
+figcaption{
+    white-space: normal;
+}
+/* ---------------- End Aside ---------------- */
+footer{
+    font-size: 75%;
+    padding: auto;
+    margin-top: 3%;
+}
+}
